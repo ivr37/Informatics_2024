@@ -5,14 +5,14 @@ import (
 	"fmt"
 )
 
-func Calc (a float64, b float64, x float64) float64 {
+func Calculate (a float64, b float64, x float64) float64 {
 	return (math.Sin(math.Pow((a+b*x), 3.5))) / (1 + math.Cos(math.Log10(a+b*x)))
 }
 
 func TaskA(a, b, xn, xk, delx float64) []float64 {
 	var values []float64
 	for x := xn; x <= xk; x += delx {
-		values = append(values, Calc (a, b, x))
+		values = append(values, Calculate (a, b, x))
 	}
 	return values
 }
@@ -20,7 +20,7 @@ func TaskA(a, b, xn, xk, delx float64) []float64 {
 func TaskB(a float64, b float64, x []float64) []float64 {
 	var values []float64
 	for _, value := range x {
-		values = append(values, Calc (a, b, value))
+		values = append(values, Calculate (a, b, value))
 	}
 	return values
 }
