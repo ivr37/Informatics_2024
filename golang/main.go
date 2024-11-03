@@ -1,9 +1,14 @@
-package main 
+package main
 
-import ( 
-    "isuct.ru/informatics2022/lab4" 
-) 
+import (
+	"fmt"
 
-func main() {  
-    lab4.RunLab4Tasks()
+	"isuct.ru/informatics2022/lab4"
+	"isuct.ru/informatics2022/lab6"
+)
+
+func main() {
+	lab4.RunLab4Tasks()
+	lab6.RunLab6()
+	fmt.Println("Рюмин Иван Андреевич")
 }
