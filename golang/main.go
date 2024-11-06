@@ -9,8 +9,6 @@ import (
 
 func main() {
 	fmt.Println("Рюмин Иван Андреевич")
-  lab4
 	lab4.RunLab4Tasks()
 	lab6.RunLab6()
-Riumin_Ivan
 }
