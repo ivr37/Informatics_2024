@@ -14,7 +14,6 @@ func CalculatePrice(products []Product) float64 {
 	sum := 0.0
 	for _, price := range products {
 		sum += price.GetPrice()
-
 	}
 	return sum
 }
@@ -39,5 +38,4 @@ func RunLab7Tasks() {
 
 	sum = CalculatePrice(buy)
 	fmt.Println("Общая стоимость:", sum)
-
 }
